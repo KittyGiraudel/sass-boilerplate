@@ -1,14 +1,14 @@
 @charset 'UTF-8';
 
-// 1. Vendors
-@import
-  'vendor/normalize';
-
-// 2. Configuration and helpers
+// 1. Configuration and helpers
 @import
   'utils/variables',
   'utils/functions',
   'utils/mixins';
+
+// 2. Vendors
+@import
+  'vendor/normalize';
 
 // 3. Base stuff
 @import
