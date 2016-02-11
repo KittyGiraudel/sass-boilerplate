@@ -32,18 +32,3 @@
   }
 }
 
-/// Responsive manager
-/// @param {String} $breakpoint - Breakpoint
-/// @requires $breakpoints
-/// @link http://sass-guidelin.es/#breakpoint-manager Sass Guidelines - Breakpoint Manager
-@mixin respond-to($breakpoint) {
-  $query: map-get($breakpoints, $breakpoint);
-  
-  @if not $query {
-    @error 'No value found for `#{$breakpoint}`. Please make sure it is defined in `$breakpoints` map.';
-  }
-
-  @media #{if(type-of($query) == 'string', unquote($query), inspect($query))} {
-    @content;
-  }
-}
