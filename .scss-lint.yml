@@ -1,3 +1,5 @@
+exclude: 'stylesheets/vendor/**'
+
 linters:
 
   BangFormat:
