@@ -24,7 +24,7 @@
 }
 
 /// Make a context based selector a little more friendly
-/// @author Hugo Giraudel
+/// @author Kitty Giraudel
 /// @param {String} $context
 @mixin when-inside($context) {
   #{$context} & {
