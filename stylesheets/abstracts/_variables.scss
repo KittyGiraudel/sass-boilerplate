@@ -67,5 +67,5 @@ $breakpoints: (
 /// Relative or absolute URL where all assets are served from
 /// @type String
 /// @example scss - When using a CDN
-///   $base-url: 'http://cdn.example.com/assets/';
+///   $base-url: 'https://cdn.example.com/assets/';
 $base-url: '/assets/' !default;
