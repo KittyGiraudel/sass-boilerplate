@@ -34,7 +34,7 @@
   }
 }
 
-/// Media Queries, using variables 
+/// Media Queries, using variables
 /// @author atpriyanshu
 /// @param {String|Number} $size
 @mixin media($size) {
@@ -52,6 +52,6 @@
       }
     }
   } @else {
-      @error 'this keyword #{$size} is not in the $breakpoints.';
-    }
+    @error 'this keyword #{$size} is not in the $breakpoints.';
+  }
 }
