@@ -2,6 +2,8 @@
 // This file contains all application-wide Sass mixins.
 // -----------------------------------------------------------------------------
 
+@use "sass:map";
+
 /// Event wrapper
 /// @author Harry Roberts
 /// @param {Bool} $self [false] - Whether or not to include current selector
@@ -32,3 +34,20 @@
   }
 }
 
+/// Make it easy to import fonts
+/// @author atpriyanshu
+/// @param {String} $font-family-name
+/// @param {String} $font-family-url-key
+
+$font-family-url: ();
+$font-family-url: map.set($font-family-url, 'primary', 'https://fonts.googleapis.com/css2?family={}:wght@300,regular,700&display=swap');
+@mixin font-family($font-family-name, $font-family-url-key: 'primary') {
+  $string: map-get($font-family-url, $font-family-url-key);
+
+  $url-pre: str-slice($string, 0, str-index($string, '{}') - 1);
+  $url-post: str-slice($string, str-index($string, '{}') + 2, -1);
+
+  $url: $url-pre + $font-family-name + $url-post;
+
+  @import url($url);
+}
