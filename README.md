@@ -16,18 +16,18 @@ Clone it, head into the project and then run:
 sass-convert -F scss -T sass -i -R ./  && find . -iname “*.scss” -exec bash -c 'mv "$0" “${0%\.scss}.sass"' {} \;
 ```
 
-### Use with Node-sass
+### Use with Sass
 
-When using `node-sass` - in order to build that boilerplate, one needs to:
+When using `sass` - in order to build that boilerplate, one needs to:
 
-- install `node-sass` if not yet installed:
+- install `sass` if not yet installed:
 
 ```bash
-npm install -g node-sass
+npm install -g sass
 ```
 
 - run build command from command line:
 
 ```bash
-node-sass stylesheets/main.scss dist/main.css
+sass stylesheets/main.scss dist/main.css
 ```
