@@ -28,3 +28,11 @@
 @function font($path, $base: $base-url) {
   @return asset($base, 'fonts/', $path);
 }
+
+/// Returns hsl values for color
+/// @param {String} $color - a sass/css color
+/// @return {String} $hsl-value
+@function get-hsl-values($color) {
+  $hsl-values: hue($color) saturation($color) lightness($color);
+  @return $hsl-values;
+}
