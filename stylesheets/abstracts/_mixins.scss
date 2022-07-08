@@ -11,13 +11,15 @@
     &,
     &:hover,
     &:active,
-    &:focus {
+    &:focus,
+    &:focus-within {
       @content;
     }
   } @else {
     &:hover,
     &:active,
-    &:focus {
+    &:focus,
+    &:focus-within {
       @content;
     }
   }
