@@ -8,6 +8,7 @@
 /// @link https://twitter.com/csswizardry/status/478938530342006784 Original tweet from Harry Roberts
 @mixin on-event($self: false) {
   @if $self {
+
     &,
     &:hover,
     &:active,
@@ -15,7 +16,10 @@
     &:focus-within {
       @content;
     }
-  } @else {
+  }
+
+  @else {
+
     &:hover,
     &:active,
     &:focus,
@@ -33,4 +37,3 @@
     @content;
   }
 }
-
