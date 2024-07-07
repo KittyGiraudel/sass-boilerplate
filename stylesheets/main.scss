@@ -1,35 +1,25 @@
 @charset "UTF-8";
 
-// 1. Configuration and helpers
-@import
-  'abstracts/variables',
-  'abstracts/functions',
-  'abstracts/mixins';
+// No need to include partials from the 'abstracts' folder in here top of the file anymore with the @use and @forward module system.
 
-// 2. Vendors
-@import
-  'vendors/normalize';
+// 1. Vendors
+@use 'vendors/normalize';
 
-// 3. Base stuff
-@import
-  'base/base',
-  'base/fonts',
-  'base/typography',
-  'base/helpers';
+// 2. Base stuff
+@use 'base/base';
+@use 'base/fonts';
+@use 'base/helpers';
+@use 'base/typography';
 
-// 4. Layout-related sections
-@import
-  'layout/header',
-  'layout/footer';
+// 3. Layout-related sections
+@use 'layout/footer';
+@use 'layout/header';
 
-// 5. Components
-@import
-  'components/button';
+// 4. Components
+@use 'components/button';
 
-// 6. Page-specific styles
-@import
-  'pages/home';
+// 5. Pages
+@use 'pages/home';
 
-// 7. Themes
-@import
-  'themes/default';
+// 6. Themes
+@use 'themes/default';

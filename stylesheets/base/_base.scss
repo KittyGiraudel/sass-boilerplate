@@ -1,3 +1,4 @@
+@use '../abstracts';
 // -----------------------------------------------------------------------------
 // This file contains very basic styles.
 // -----------------------------------------------------------------------------
@@ -25,11 +26,11 @@ html {
  * Basic styles for links
  */
 a {
-  color: $brand-color;
+  color: abstracts.$brand-color;
   text-decoration: none;
 
-  @include on-event {
-    color: $text-color;
+  @include abstracts.on-event {
+    color: abstracts.$text-color;
     text-decoration: underline;
   }
 }
