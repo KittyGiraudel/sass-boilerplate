@@ -8,7 +8,7 @@ The rule of thumb for this folder is that it should not output a single line of 
 
 With the deprecation of the `@import` keyword, we now use the `@use` and `@forward` keywords. Unlike with `@import`, adding abstracts with `@use` at the top of the `main.scss` file does not make them globally accessible to eveything else coming afterwards.
 
-Because of that we need to import those abstracts using `@use` keyword each time we need them inside the individual files.
+Because of that we need to import those abstracts using `@use` keyword each time we need them inside the individual files, similar to how we would import utilities in the JavaScript world for that matter.
 
 This is where we need the `@forward` keyword.
 
