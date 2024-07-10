@@ -1,7 +1,5 @@
 @charset "UTF-8";
 
-// No need to include partials from the 'abstracts' folder in here top of the file anymore with the @use and @forward module system.
-
 // 1. Vendors
 @use 'vendors/normalize';
 
