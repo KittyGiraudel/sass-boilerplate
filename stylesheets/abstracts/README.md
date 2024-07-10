@@ -6,7 +6,7 @@ The rule of thumb for this folder is that it should not output a single line of 
 
 ## \_index.scss
 
-With the deprecation of `@import` keyword, We now use `@use` and `@forward` keywords. Unlike `@import` keyword, adding abstracts at the top of the main.scss file does not make them globally accessbile to eveything else comes afterwards, when using `@use` keyword.
+With the deprecation of the `@import` keyword, we now use the `@use` and `@forward` keywords. Unlike with `@import`, adding abstracts with `@use` at the top of the `main.scss` file does not make them globally accessible to eveything else coming afterwards.
 
 Because of that we need to import those abstracts using `@use` keyword each time we need them inside the individual files.
 
