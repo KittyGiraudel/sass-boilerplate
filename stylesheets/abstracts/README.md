@@ -12,6 +12,6 @@ Because of that we need to import those abstracts using `@use` keyword each time
 
 This is where we need the `@forward` keyword.
 
-We can create an `_index.scss` file. In this file, we can collect all the abstract partials with `@forward` keyword and we can re-export all abstract modules when we need them as a singular thing.
+We can create an `_index.scss` file. In this file, we can collect all the abstract partials with the `@forward` keyword and re-export all abstract modules when we need them as a singular entry.
 
 Reference: [Sass Guidelines](https://sass-guidelin.es/) > [Architecture](https://sass-guidelin.es/#architecture) > [Abstracts folder](https://sass-guidelin.es/#abstracts-folder)
